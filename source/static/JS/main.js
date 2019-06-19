@@ -19,10 +19,10 @@ var list=['我们每个人啊',
           '连光都走了一百六十多亿年才遇到你',
 		  '我们有什么理由不好好活下去啊',
           '去做自己想做的事吧',
-          '就像以前我和你说的一样',
+          '很喜欢泰戈尔说的一句话',
           '我们最该担心的',
           '不是自己何时死去',
-          '而是从未活过阿',
+          '而是从未活过',
           '如果 你遇到了实在不知道怎么解决的问题',
           '而我又恰好不在',
           '在下面的输入框里写上你的问题吧',
@@ -119,7 +119,7 @@ function FreeTime(){
             m='0'+m;
         }
 
-        document.getElementById("nowTime").innerHTML = " <span class='tem'>我只希望能够好好的</span>";
+        document.getElementById("nowTime").innerHTML = " <span class='tem'>我只希望你能够好好的</span>";
    // window.onload=function(){
    //     setInterval("nowtime.innerHTML=getTheTime();",1000);
   //  };
