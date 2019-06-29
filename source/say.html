@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divTyping">
+
+    </div>
+
+    <script>
+        let i =0;
+        function typing(){
+            let str = '悦悦呀 你终于来了 你知道我等了你多久嘛 我好爱好爱你 就像鱼儿爱着大海 鸟儿爱着天空 阿仁也爱着悦悦 不知道从什么时候开始我的世界没有了亮光 眼前只看的到黑暗 我只能一个人在黑暗里 踌躇前行 直到你来啦 你就像一个天使 把天堂带到我的身边 我不知道未来是怎么样的 可是我知道你是什么样的 我的未来就是什么样的  小时候抬头望着星星 想着月亮什么时候来呀 长大了看着月亮 你什么时候来呀 我好爱你 像风走了两万里不问归期 我好爱你 像等待王朝复辟的臣民 遥遥无期 我好爱你 像万里无云的天空 独你一颗星  我不知道什么叫天注定 可是我知道遇见你就是天注定  我想另外没遇到你的平行宇宙里的我该有多惨鸭 还好我不是那个他 有的时候也不禁感慨世间的奇妙 有时候问自己 为什么会被世界这样对待 后来我才知道 原来是为了遇见你 天空到底是什么颜色 我们呼吸着同一天空的气息 看着同一个月亮 却到现在才相遇 你说千年之后的我们会在哪里 你还会记得我的姓名吗 我会记得你的  因为我爱你 如同世间所有伟大的关系一样 这份爱会随着时间的流逝 越发闪耀 我爱你 悦悦';
+            let divTyping = document.getElementById('divTyping');
+            if (i <= str.length) {
+                divTyping.innerHTML = str.slice(0, i++) + '_';
+                setTimeout('typing()', 230);//&#x9012;&#x5f52;&#x8c03;&#x7528; 230
+            }
+            else{
+                divTyping.innerHTML = str;//&#x7ed3;&#x675f;&#x6253;&#x5b57;,&#x79fb;&#x9664; _ &#x5149;&#x6807;
+                return 0
+            }
+        }
+        typing();
+    </script>
+</body>
+</html>
