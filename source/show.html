@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+<script>
+    let arr =['悦悦呀','我好爱你呀','特别特别爱你','有人说 ,爱是无知的 就像你 小时候 见过月亮就以为它是最大的','可是现在',' 我却可以说 ','我已见过整个银河 却独爱你这颗星','1','1'];
+    let i = 0;
+    let div = document.getElementsByTagName('div')[0];
+
+    let interval =  setInterval(function(){
+        if(arr[i]){
+            alert(arr[i]);
+            div.append(new DOMParser().parseFromString('<h1 style="color:pink;">'+arr[i]+'</h1>', 'text/html').body.childNodes[0]);
+            i++;
+        }else{
+            clearInterval(interval);
+        }
+       
+
+},2000)  
+
+</script>
+
+</body>
+</html>
